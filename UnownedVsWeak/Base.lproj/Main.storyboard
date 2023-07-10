@@ -54,25 +54,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondVC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtd-f1-ABc">
-                                <rect key="frame" x="96.666666666666686" y="376" width="200" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="94l-hX-daD">
+                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="LwD-N8-Hno"/>
-                                    <constraint firstAttribute="height" constant="100" id="eAQ-jQ-gG6"/>
+                                    <constraint firstAttribute="width" constant="240" id="lBJ-fv-mMR"/>
+                                    <constraint firstAttribute="height" constant="128" id="wPF-Hf-C3X"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="azh-zo-cAz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wtd-f1-ABc" firstAttribute="centerY" secondItem="NzP-UV-UAM" secondAttribute="centerY" id="DAN-X1-UrF"/>
-                            <constraint firstItem="wtd-f1-ABc" firstAttribute="centerX" secondItem="NzP-UV-UAM" secondAttribute="centerX" id="FSL-G9-VZl"/>
+                            <constraint firstItem="94l-hX-daD" firstAttribute="centerX" secondItem="NzP-UV-UAM" secondAttribute="centerX" id="UAT-pH-cRm"/>
+                            <constraint firstItem="94l-hX-daD" firstAttribute="centerY" secondItem="NzP-UV-UAM" secondAttribute="centerY" id="b66-28-oFB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rEx-US-x8W"/>
+                    <connections>
+                        <outlet property="imageView" destination="94l-hX-daD" id="CLl-4c-pjD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQQ-Jc-OYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

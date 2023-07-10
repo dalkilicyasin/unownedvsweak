@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F541C71A-472B-4C68-81B3-77EF1BCBBDD8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5C1C653-5E8B-48DB-B76B-B59007051D11"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnownedVsWeak/SecondViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "tryNone()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A5C1C653-5E8B-48DB-B76B-B59007051D11 - 2b60f02486c99a6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UnownedVsWeak.SecondViewController.tryNone() -&gt; ()"
+                  moduleName = "UnownedVsWeak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/UnownedVsWeak/UnownedVsWeak/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "A5C1C653-5E8B-48DB-B76B-B59007051D11 - 2b60f02486c99a6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UnownedVsWeak.SecondViewController.tryNone() -&gt; ()"
+                  moduleName = "UnownedVsWeak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/UnownedVsWeak/UnownedVsWeak/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
