@@ -18,28 +18,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l9-Vn-YFV">
-                                <rect key="frame" x="96.666666666666686" y="376" width="200" height="100"/>
+                                <rect key="frame" x="91" y="186" width="211" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="1xY-J1-NLf"/>
-                                    <constraint firstAttribute="height" constant="100" id="mlH-mD-C3H"/>
+                                    <constraint firstAttribute="height" constant="100" id="qu6-mI-R36"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="FirstVC"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check Self"/>
                                 <connections>
                                     <action selector="toSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dcm-HP-Ial"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPf-6e-N0s">
+                                <rect key="frame" x="96" y="376" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AjX-sI-9TP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check [weak self]"/>
+                                <connections>
+                                    <action selector="toSecondVCweak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbw-3C-9Hc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsH-Ja-WUl">
+                                <rect key="frame" x="96" y="562" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2Qu-96-xDE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check [Unowned self]"/>
+                                <connections>
+                                    <action selector="toSecondVCunowned:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eO5-b7-Mpl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5l9-Vn-YFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9qs-UJ-eAM"/>
-                            <constraint firstItem="5l9-Vn-YFV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zdZ-iu-VTd"/>
+                            <constraint firstItem="TPf-6e-N0s" firstAttribute="top" secondItem="5l9-Vn-YFV" secondAttribute="bottom" constant="90" id="6fy-Bg-tmm"/>
+                            <constraint firstItem="5l9-Vn-YFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="BAT-ps-kyN"/>
+                            <constraint firstItem="TPf-6e-N0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="Drb-X2-asu"/>
+                            <constraint firstItem="AsH-Ja-WUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="FYm-dB-XqG"/>
+                            <constraint firstItem="5l9-Vn-YFV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="186" id="Kp8-c2-YSL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5l9-Vn-YFV" secondAttribute="trailing" constant="91" id="PwL-Tn-MC9"/>
+                            <constraint firstItem="AsH-Ja-WUl" firstAttribute="top" secondItem="TPf-6e-N0s" secondAttribute="bottom" constant="86" id="SuZ-Kt-o9a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPf-6e-N0s" secondAttribute="trailing" constant="97" id="VRD-tR-gJU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AsH-Ja-WUl" secondAttribute="trailing" constant="97" id="bhL-pA-Gsv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F9g-eX-UYx"/>
                     <connections>
                         <segue destination="VjD-7t-kCE" kind="show" id="Gha-AK-1Dy"/>
+                        <segue destination="gxx-Hq-JdU" kind="show" id="ICc-oE-nSK"/>
+                        <segue destination="jZH-2e-70m" kind="show" id="gxa-Y5-YYJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQQ-Jc-OYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="4"/>
+            <point key="canvasLocation" x="1914" y="-277"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wEu-Bh-m2e">
@@ -95,6 +125,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTv-oH-xYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-31.297709923664122" y="3.5211267605633805"/>
+        </scene>
+        <!--Second View Controllerunowned-->
+        <scene sceneID="Mh7-D8-IvX">
+            <objects>
+                <viewController storyboardIdentifier="nextView3" id="jZH-2e-70m" customClass="SecondViewControllerunowned" customModule="UnownedVsWeak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G3n-fd-MQS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hby-6J-yyI">
+                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VVr-HT-249"/>
+                                    <constraint firstAttribute="width" constant="240" id="dO0-OZ-nDG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2IS-ga-NLL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hby-6J-yyI" firstAttribute="centerX" secondItem="G3n-fd-MQS" secondAttribute="centerX" id="Tgy-Wl-eZm"/>
+                            <constraint firstItem="Hby-6J-yyI" firstAttribute="centerY" secondItem="G3n-fd-MQS" secondAttribute="centerY" id="bV6-ii-AYp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eKY-Ij-QLv"/>
+                    <connections>
+                        <outlet property="imageView" destination="Hby-6J-yyI" id="vRa-mu-Emf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3G-ia-cmf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="576"/>
+        </scene>
+        <!--Second View Controllerweak-->
+        <scene sceneID="h7S-qT-2Pz">
+            <objects>
+                <viewController storyboardIdentifier="nextView2" id="gxx-Hq-JdU" customClass="SecondViewControllerweak" customModule="UnownedVsWeak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u4r-t0-X8N">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-p2-9GW">
+                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8Lu-tV-Hq4"/>
+                                    <constraint firstAttribute="height" constant="128" id="klw-yA-bsw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vOj-DS-iKe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RwN-p2-9GW" firstAttribute="centerY" secondItem="u4r-t0-X8N" secondAttribute="centerY" id="1SW-Qd-j3d"/>
+                            <constraint firstItem="RwN-p2-9GW" firstAttribute="centerX" secondItem="u4r-t0-X8N" secondAttribute="centerX" id="4Rg-6X-7uX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XA3-2l-7Tw"/>
+                    <connections>
+                        <outlet property="imageView" destination="RwN-p2-9GW" id="bny-31-K02"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yte-dK-Z4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2737" y="253"/>
         </scene>
     </scenes>
     <resources>

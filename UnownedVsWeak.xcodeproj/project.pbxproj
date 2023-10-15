@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D942FBB72A5D3D3100460A95 /* SecondViewControllerweak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D942FBB62A5D3D3100460A95 /* SecondViewControllerweak.swift */; };
+		D942FBB92A5D3D6F00460A95 /* SecondViewControllerunowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = D942FBB82A5D3D6F00460A95 /* SecondViewControllerunowned.swift */; };
 		D9A84BC62A5B298700320057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A84BC52A5B298700320057 /* AppDelegate.swift */; };
 		D9A84BC82A5B298700320057 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A84BC72A5B298700320057 /* SceneDelegate.swift */; };
 		D9A84BCA2A5B298700320057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A84BC92A5B298700320057 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D942FBB62A5D3D3100460A95 /* SecondViewControllerweak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerweak.swift; sourceTree = "<group>"; };
+		D942FBB82A5D3D6F00460A95 /* SecondViewControllerunowned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerunowned.swift; sourceTree = "<group>"; };
 		D9A84BC22A5B298700320057 /* UnownedVsWeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnownedVsWeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A84BC52A5B298700320057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A84BC72A5B298700320057 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				D9A84BC72A5B298700320057 /* SceneDelegate.swift */,
 				D9A84BC92A5B298700320057 /* ViewController.swift */,
 				D9A84BF52A5B2BCE00320057 /* SecondViewController.swift */,
+				D942FBB62A5D3D3100460A95 /* SecondViewControllerweak.swift */,
+				D942FBB82A5D3D6F00460A95 /* SecondViewControllerunowned.swift */,
 				D9A84BCB2A5B298700320057 /* Main.storyboard */,
 				D9A84BCE2A5B298900320057 /* Assets.xcassets */,
 				D9A84BD02A5B298900320057 /* LaunchScreen.storyboard */,
@@ -264,7 +270,9 @@
 				D9A84BF62A5B2BCE00320057 /* SecondViewController.swift in Sources */,
 				D9A84BCA2A5B298700320057 /* ViewController.swift in Sources */,
 				D9A84BC62A5B298700320057 /* AppDelegate.swift in Sources */,
+				D942FBB92A5D3D6F00460A95 /* SecondViewControllerunowned.swift in Sources */,
 				D9A84BC82A5B298700320057 /* SceneDelegate.swift in Sources */,
+				D942FBB72A5D3D3100460A95 /* SecondViewControllerweak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

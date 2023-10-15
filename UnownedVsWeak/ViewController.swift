@@ -19,5 +19,17 @@ class ViewController: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView") as! SecondViewController
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
+
+    @IBAction func toSecondVCweak(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView2") as! SecondViewControllerweak
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+
+    @IBAction func toSecondVCunowned(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView3") as! SecondViewControllerunowned
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }
 
